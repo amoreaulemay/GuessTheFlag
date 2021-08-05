@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct GuessTheFlagApp: App {
+    @StateObject var modelData = ModelData()
+    @StateObject var educationTab = EducationTab()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(modelData)
+                .environmentObject(educationTab)
         }
     }
 }
