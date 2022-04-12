@@ -21,34 +21,19 @@ enum BtnState {
 
 struct Mode1HomeView: View {
     @EnvironmentObject var educationTab: EducationTab
-    @EnvironmentObject var modelData: ModelData
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    @State private var btnState: [BtnState] = [.initial, .initial, .initial, .initial]
-    @State private var countries: [String] = ["Canada", "Zimbabwe", "Greece", "France"]
-    @State private var answer: String = "Canada"
-    @State private var flag: String = "ca"
-    
-    typealias AnswerBtn = Mode1AnswerBtn
-    typealias FlagView = Mode1Flag
+    @State private var score: Int = 0
+    @State private var questionCount: Int = 0
+    @State private var shouldExit: Bool = false
     
     var content: some View {
-        VStack {
-            Text("Which Country's Flag is this?")
-                .font(.title2)
-                .fontWeight(.bold)
-                .multilineTextAlignment(.center)
-            
-            FlagView(flag: flag)
-            
-            VStack(spacing: 10) {
-                ForEach(0..<countries.count) { id in
-                    AnswerBtn(countries[id]) {
-                        self.validateAnswer(for: id)
-                    }.state(btnState[id])
+        Mode1Question(score: $score, questionCount: $questionCount, shouldExit: $shouldExit)
+            .onChange(of: shouldExit, perform: { value in
+                if value {
+                    exit()
                 }
-            }
-        }
-        .padding()
+            })
     }
     
     var title: String = Modes.0
@@ -56,48 +41,13 @@ struct Mode1HomeView: View {
     var body: some View {
         GameModeTemplateView(title: title, view: AnyView(content))
             .onAppear(perform: {
-                self.setAnswer()
-                
                 educationTab.isDisabled = true
             })
     }
     
-    func validateAnswer(for btnID: Int) {
-        if countries[btnID] == answer {
-            print("Good one")
-            btnState[btnID] = .correct
-        } else {
-            print("Wrong answer")
-            btnState[btnID] = .wrong
-        }
-    }
-    
-    func resetState() {
-        self.answer = ""
-        self.countries.removeAll()
-        self.btnState = [.initial, .initial, .initial, .initial]
-    }
-    
-    func setAnswer() {
-        self.resetState()
-        
-        let chosenCountry = getRandomCountry(from: modelData.countries)
-        
-        self.answer = chosenCountry.name
-        self.flag = chosenCountry.flag
-        self.countries.append(chosenCountry.name)
-        
-        self.populateCountries()
-        
-        self.countries = self.countries.shuffled()
-    }
-    
-    func populateCountries() {
-        for _ in 0..<3 {
-            let newCountry = getRandomCountry(from: modelData.countries, excluding: countries)
-            
-            self.countries.append(newCountry.name)
-        }
+    func exit() {
+        educationTab.isDisabled = false
+        self.presentationMode.wrappedValue.dismiss()
     }
 }
 

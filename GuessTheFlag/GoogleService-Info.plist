@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>644588364392-6m91etv1pf4bud4o0ri8ece5te0huirn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.644588364392-6m91etv1pf4bud4o0ri8ece5te0huirn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDZKvJL_6URqVk9e9h_A02pQeo7lQJ0h-Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>644588364392</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.aml-design.GuessTheFlag</string>
+	<key>PROJECT_ID</key>
+	<string>guess-the-flag-a8159</string>
+	<key>STORAGE_BUCKET</key>
+	<string>guess-the-flag-a8159.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:644588364392:ios:a26d44a090b3d1d02411dd</string>
+</dict>
+</plist>

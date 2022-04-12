@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GameModeTemplateView: View {
+struct GameModeTemplateView: View {    
     var title: String = "Test View"
     var view: AnyView = AnyView(Text("Test View"))
     

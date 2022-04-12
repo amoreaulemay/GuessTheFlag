@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		1A3600D226B040B000EB2D7D /* flags.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A3600D126B040B000EB2D7D /* flags.json */; };
 		1A3600D426B0937B00EB2D7D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A3600D326B0937B00EB2D7D /* countries.json */; };
 		1A3600D726B093AE00EB2D7D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3600D626B093AE00EB2D7D /* Country.swift */; };
+		1A45764226C55930008A77F2 /* GlobalEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45764126C55930008A77F2 /* GlobalEnums.swift */; };
+		1A45764426C559B7008A77F2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45764326C559B7008A77F2 /* SettingsView.swift */; };
 		1A5C334326B1400D00766AB2 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C334226B1400D00766AB2 /* ModelData.swift */; };
 		1A5C334726B140F400766AB2 /* CountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C334626B140F400766AB2 /* CountriesListView.swift */; };
 		1A5C334A26B1434A00766AB2 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C334926B1434A00766AB2 /* CircleImage.swift */; };
@@ -28,8 +30,13 @@
 		1A7C528F26B807ED00AD5123 /* GameNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C528E26B807ED00AD5123 /* GameNavBar.swift */; };
 		1A7C529126B80CB800AD5123 /* GameModeTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C529026B80CB800AD5123 /* GameModeTemplateView.swift */; };
 		1A7C529426B988BD00AD5123 /* Modes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C529326B988BD00AD5123 /* Modes.swift */; };
+		1ACE64A226CAD1F600F3BB24 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE64A126CAD1F600F3BB24 /* GoogleService-Info.plist */; };
+		1ACE64A326CAD42000F3BB24 /* Pods_GuessTheFlag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CDDDA40DEFDDFD1411C9FE /* Pods_GuessTheFlag.framework */; };
 		1AF16EC026BAD5E2003D3A8F /* Mode1AnswerBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF16EBF26BAD5E2003D3A8F /* Mode1AnswerBtn.swift */; };
 		1AF16EC226BB0540003D3A8F /* Mode1Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF16EC126BB0540003D3A8F /* Mode1Flag.swift */; };
+		1AF16EC426BBDCCB003D3A8F /* Mode1Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF16EC326BBDCCB003D3A8F /* Mode1Question.swift */; };
+		1AF16EC626BBEA70003D3A8F /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF16EC526BBEA70003D3A8F /* ProgressBar.swift */; };
+		1AF16EC826BBEAE9003D3A8F /* Mode1EndSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF16EC726BBEAE9003D3A8F /* Mode1EndSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,12 +49,15 @@
 		1A3600D126B040B000EB2D7D /* flags.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flags.json; sourceTree = "<group>"; };
 		1A3600D326B0937B00EB2D7D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		1A3600D626B093AE00EB2D7D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		1A45764126C55930008A77F2 /* GlobalEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalEnums.swift; sourceTree = "<group>"; };
+		1A45764326C559B7008A77F2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1A5C334226B1400D00766AB2 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		1A5C334626B140F400766AB2 /* CountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListView.swift; sourceTree = "<group>"; };
 		1A5C334926B1434A00766AB2 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		1A5C334B26B1624900766AB2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		1A5C334D26B16B4900766AB2 /* CountryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetail.swift; sourceTree = "<group>"; };
 		1A5C334F26B1876500766AB2 /* WikipediaExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaExtractor.swift; sourceTree = "<group>"; };
+		1A730C762805FD3C00D595F0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A7C527F26B7FD9600AD5123 /* GameHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHomeView.swift; sourceTree = "<group>"; };
 		1A7C528526B8039100AD5123 /* Mode1HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode1HomeView.swift; sourceTree = "<group>"; };
 		1A7C528726B8047F00AD5123 /* Mode2HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode2HomeView.swift; sourceTree = "<group>"; };
@@ -57,8 +67,15 @@
 		1A7C529026B80CB800AD5123 /* GameModeTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeTemplateView.swift; sourceTree = "<group>"; };
 		1A7C529226B94BEB00AD5123 /* Mode1Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Mode1Description.md; sourceTree = "<group>"; };
 		1A7C529326B988BD00AD5123 /* Modes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modes.swift; sourceTree = "<group>"; };
+		1ACE64A126CAD1F600F3BB24 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1AF16EBF26BAD5E2003D3A8F /* Mode1AnswerBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode1AnswerBtn.swift; sourceTree = "<group>"; };
 		1AF16EC126BB0540003D3A8F /* Mode1Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode1Flag.swift; sourceTree = "<group>"; };
+		1AF16EC326BBDCCB003D3A8F /* Mode1Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode1Question.swift; sourceTree = "<group>"; };
+		1AF16EC526BBEA70003D3A8F /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		1AF16EC726BBEAE9003D3A8F /* Mode1EndSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode1EndSheet.swift; sourceTree = "<group>"; };
+		89CAF053C9B89595CC12342E /* Pods-GuessTheFlag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheFlag.debug.xcconfig"; path = "Target Support Files/Pods-GuessTheFlag/Pods-GuessTheFlag.debug.xcconfig"; sourceTree = "<group>"; };
+		A5CDDDA40DEFDDFD1411C9FE /* Pods_GuessTheFlag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessTheFlag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE19273E79A07D3B08016F89 /* Pods-GuessTheFlag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheFlag.release.xcconfig"; path = "Target Support Files/Pods-GuessTheFlag/Pods-GuessTheFlag.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ACE64A326CAD42000F3BB24 /* Pods_GuessTheFlag.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +93,11 @@
 		1A3600B526B03B8100EB2D7D = {
 			isa = PBXGroup;
 			children = (
+				1A730C762805FD3C00D595F0 /* README.md */,
 				1A3600C026B03B8100EB2D7D /* GuessTheFlag */,
 				1A3600BF26B03B8100EB2D7D /* Products */,
+				56AC04515D980E5CDBB3D346 /* Pods */,
+				ACDC564B89300B43E7EF5850 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +118,7 @@
 				1A3600C126B03B8100EB2D7D /* GuessTheFlagApp.swift */,
 				1A3600C526B03B8200EB2D7D /* Assets.xcassets */,
 				1A3600CA26B03B8200EB2D7D /* Info.plist */,
+				1ACE64A126CAD1F600F3BB24 /* GoogleService-Info.plist */,
 				1A3600C726B03B8200EB2D7D /* Preview Content */,
 			);
 			path = GuessTheFlag;
@@ -124,13 +146,31 @@
 			children = (
 				1A3600D626B093AE00EB2D7D /* Country.swift */,
 				1A5C334226B1400D00766AB2 /* ModelData.swift */,
+				1A45764126C55930008A77F2 /* GlobalEnums.swift */,
 			);
 			path = DataModels;
+			sourceTree = "<group>";
+		};
+		1A45764026C532CF008A77F2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1A45764326C559B7008A77F2 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1A45764526CA5B3F008A77F2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		1A5C334426B140CF00766AB2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1A45764526CA5B3F008A77F2 /* Profile */,
+				1A45764026C532CF008A77F2 /* Settings */,
 				1A7C527E26B7FD7F00AD5123 /* Game */,
 				1A5C334526B140E100766AB2 /* Education */,
 				1A3600C326B03B8100EB2D7D /* ContentView.swift */,
@@ -211,6 +251,7 @@
 				1A7C528E26B807ED00AD5123 /* GameNavBar.swift */,
 				1A7C529026B80CB800AD5123 /* GameModeTemplateView.swift */,
 				1A7C529326B988BD00AD5123 /* Modes.swift */,
+				1AF16EC526BBEA70003D3A8F /* ProgressBar.swift */,
 			);
 			path = "Shared UI";
 			sourceTree = "<group>";
@@ -220,8 +261,27 @@
 			children = (
 				1AF16EBF26BAD5E2003D3A8F /* Mode1AnswerBtn.swift */,
 				1AF16EC126BB0540003D3A8F /* Mode1Flag.swift */,
+				1AF16EC326BBDCCB003D3A8F /* Mode1Question.swift */,
+				1AF16EC726BBEAE9003D3A8F /* Mode1EndSheet.swift */,
 			);
 			path = Questions;
+			sourceTree = "<group>";
+		};
+		56AC04515D980E5CDBB3D346 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89CAF053C9B89595CC12342E /* Pods-GuessTheFlag.debug.xcconfig */,
+				CE19273E79A07D3B08016F89 /* Pods-GuessTheFlag.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ACDC564B89300B43E7EF5850 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5CDDDA40DEFDDFD1411C9FE /* Pods_GuessTheFlag.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A3600CD26B03B8200EB2D7D /* Build configuration list for PBXNativeTarget "GuessTheFlag" */;
 			buildPhases = (
+				428BA03B296CAEEEF8F6F70C /* [CP] Check Pods Manifest.lock */,
 				1A3600BA26B03B8100EB2D7D /* Sources */,
 				1A3600BB26B03B8100EB2D7D /* Frameworks */,
 				1A3600BC26B03B8100EB2D7D /* Resources */,
+				21A326488CF28A10325BAE0C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,12 +345,55 @@
 			files = (
 				1A3600C926B03B8200EB2D7D /* Preview Assets.xcassets in Resources */,
 				1A3600C626B03B8200EB2D7D /* Assets.xcassets in Resources */,
+				1ACE64A226CAD1F600F3BB24 /* GoogleService-Info.plist in Resources */,
 				1A3600D426B0937B00EB2D7D /* countries.json in Resources */,
 				1A3600D226B040B000EB2D7D /* flags.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21A326488CF28A10325BAE0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessTheFlag/Pods-GuessTheFlag-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessTheFlag/Pods-GuessTheFlag-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuessTheFlag/Pods-GuessTheFlag-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		428BA03B296CAEEEF8F6F70C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuessTheFlag-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A3600BA26B03B8100EB2D7D /* Sources */ = {
@@ -299,18 +404,23 @@
 				1A5C334C26B1624900766AB2 /* MapView.swift in Sources */,
 				1A3600C426B03B8100EB2D7D /* ContentView.swift in Sources */,
 				1A5C334326B1400D00766AB2 /* ModelData.swift in Sources */,
+				1AF16EC426BBDCCB003D3A8F /* Mode1Question.swift in Sources */,
 				1A3600D726B093AE00EB2D7D /* Country.swift in Sources */,
 				1A7C528826B8047F00AD5123 /* Mode2HomeView.swift in Sources */,
 				1AF16EC226BB0540003D3A8F /* Mode1Flag.swift in Sources */,
 				1A3600C226B03B8100EB2D7D /* GuessTheFlagApp.swift in Sources */,
+				1A45764426C559B7008A77F2 /* SettingsView.swift in Sources */,
 				1A7C528C26B804A200AD5123 /* Mode4HomeView.swift in Sources */,
 				1A5C334E26B16B4900766AB2 /* CountryDetail.swift in Sources */,
 				1A7C528626B8039100AD5123 /* Mode1HomeView.swift in Sources */,
 				1A7C528A26B8049300AD5123 /* Mode3HomeView.swift in Sources */,
+				1AF16EC626BBEA70003D3A8F /* ProgressBar.swift in Sources */,
 				1A7C529126B80CB800AD5123 /* GameModeTemplateView.swift in Sources */,
 				1A5C334726B140F400766AB2 /* CountriesListView.swift in Sources */,
 				1A7C529426B988BD00AD5123 /* Modes.swift in Sources */,
 				1A5C334A26B1434A00766AB2 /* CircleImage.swift in Sources */,
+				1AF16EC826BBEAE9003D3A8F /* Mode1EndSheet.swift in Sources */,
+				1A45764226C55930008A77F2 /* GlobalEnums.swift in Sources */,
 				1AF16EC026BAD5E2003D3A8F /* Mode1AnswerBtn.swift in Sources */,
 				1A7C528F26B807ED00AD5123 /* GameNavBar.swift in Sources */,
 				1A7C528026B7FD9600AD5123 /* GameHomeView.swift in Sources */,
@@ -438,6 +548,7 @@
 		};
 		1A3600CE26B03B8200EB2D7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89CAF053C9B89595CC12342E /* Pods-GuessTheFlag.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +562,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aml-design.GuessTheFlag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -460,6 +572,7 @@
 		};
 		1A3600CF26B03B8200EB2D7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE19273E79A07D3B08016F89 /* Pods-GuessTheFlag.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +586,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aml-design.GuessTheFlag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct GuessTheFlagApp: App {
     @StateObject var modelData = ModelData()
     @StateObject var educationTab = EducationTab()
+    
+    init() {
+        FirebaseApp.configure()
+    }
     
     var body: some Scene {
         WindowGroup {

@@ -34,11 +34,17 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 
-func getRandomCountry(from countries: [Country], excluding excludedList: [String]? = nil) -> Country {
+func getRandomCountry(from countries: [Country], excluding excludedList: [Country]? = nil) -> Country {
     var index = Int.random(in: 0..<countries.count)
     
     if let exclusionList = excludedList {
-        while exclusionList.contains(countries[index].name) {
+        var excludedFlags: [String] = []
+        
+        for excluded in exclusionList {
+            excludedFlags.append(excluded.flag)
+        }
+        
+        while exclusionList.contains(countries[index]) || excludedFlags.contains(where: countries[index].exclusions.contains) {
             index = Int.random(in: 0..<countries.count)
         }
     }

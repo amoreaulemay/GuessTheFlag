@@ -20,6 +20,7 @@ struct ContentView: View {
     enum Tab {
         case game
         case education
+        case settings
     }
     
     var body: some View {
@@ -37,6 +38,12 @@ struct ContentView: View {
                     }
                     .tag(Tab.education)
             }
+            
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
+                }
+                .tag(Tab.settings)
         }
     }
 }
